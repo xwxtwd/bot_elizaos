@@ -19,12 +19,12 @@ COPY package.json pnpm-lock.yaml ./
 
 # Install dependencies and build the project
 RUN pnpm install
-RUN pnpm install sqlite-vec --force
 
 # Copy the rest of the application code
 COPY src ./src
 COPY characters ./characters
 COPY tsconfig.json ./
+COPY .env ./
 
 ENV NODE_OPTIONS="--max-old-space-size=8192"
 CMD ["pnpm", "run", "start", "--characters='./characters/elizaos.character.json'"]

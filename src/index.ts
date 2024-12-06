@@ -309,7 +309,7 @@ const startAgents = async () => {
   }
 
   elizaLogger.log("Chat started. Type 'exit' to quit.");
-  chat();
+  // chat();
 };
 
 startAgents().catch((error) => {
