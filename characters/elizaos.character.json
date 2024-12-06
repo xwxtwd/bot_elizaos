@@ -1,8 +1,8 @@
 {
   "name": "ElisaOS.Art",
   "plugins": [],
-  "clients": [],
-  "modelProvider": "openrouter",
+  "clients": ["twitter"],
+  "modelProvider": "redpill",
   "settings": {
     "secrets": {},
     "voice": {
