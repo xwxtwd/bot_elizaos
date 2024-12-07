@@ -322,10 +322,10 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.on("SIGINT", () => {
-  rl.close();
-  process.exit(0);
-});
+// rl.on("SIGINT", () => {
+//   rl.close();
+//   process.exit(0);
+// });
 
 async function handleUserInput(input, agentId) {
   if (input.toLowerCase() === "exit") {
