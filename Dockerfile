@@ -24,7 +24,6 @@ RUN pnpm install
 COPY src ./src
 COPY characters ./characters
 COPY tsconfig.json ./
-COPY .env ./
 
 ENV NODE_OPTIONS="--max-old-space-size=8192"
 CMD ["pnpm", "run", "start", "--characters='./characters/elizaos.character.json'"]
